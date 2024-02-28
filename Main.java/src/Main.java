@@ -1,13 +1,13 @@
 
 public class Main {
 
-	public static int add(int x, int y) {
-	int ans = x + y;
-	return ans;
+	public static void printArray(int[] array) {
+		for (int element : array) {
+			System.out.println(element);
+		}
 	}
 	public static void main(String[] args) {
-		System.out.println(add(add(10, 20), add(30, 40))); 
-		//中の２つのaddが計算されて、add(30, 70)になる。
-		//つまりSystem.out.println(100);
+		int[] array = {1, 2, 3};
+		printArray(array);	//配列を返す
 	}
 }	
