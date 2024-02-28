@@ -1,14 +1,12 @@
 
 public class Main {
 
-	public static void methodA() {
-		System.out.println("methodA");
-		methodB();  //methodBメソッドの呼び出し
+	public static int add(int x, int y) {
+	int ans = x + y;
+	return ans;
 	}
-	public static void methodB() {
-		System.out.println("methodB");
-	}
-	public static void main(String[] args) {	//ここがmainメソッド
-		methodA();  //methodAメソッドの呼び出し
+	public static void main(String[] args) {
+		int ans = add(100, 10);	//addメソッドの呼び出し（110になる）
+		System.out.println("100 + 10 = " + ans);
 	}
 }
