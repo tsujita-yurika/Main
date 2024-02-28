@@ -6,7 +6,8 @@ public class Main {
 	return ans;
 	}
 	public static void main(String[] args) {
-		int ans = add(100, 10);	//addメソッドの呼び出し（110になる）
-		System.out.println("100 + 10 = " + ans);
+		System.out.println(add(add(10, 20), add(30, 40))); 
+		//中の２つのaddが計算されて、add(30, 70)になる。
+		//つまりSystem.out.println(100);
 	}
-}
+}	
